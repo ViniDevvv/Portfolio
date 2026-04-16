@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>ClimExemple – Contact & devis</title>
+  <meta name="description" content="Contactez ClimExemple pour un devis climatisation, une maintenance ou un dépannage urgent sur la Région Fictive." />
+  <meta name="theme-color" content="#041830" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="canonical" href="https://climexemple.fr/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ClimExemple – Contact & devis" />
+  <meta property="og:description" content="Contactez ClimExemple pour un devis climatisation, une maintenance ou un dépannage urgent sur la Région Fictive." />
+  <meta property="og:image" content="https://aeroclim.fr/logoaeroclim.webp" />
+  <meta property="og:url" content="https://aeroclim.fr/contact.html" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="stylesheet" href="css.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+  <div style="background:#ffe7b3;color:#7a4d00;padding:10px 0;text-align:center;font-weight:bold;z-index:9999;position:relative;">
+    <span>Ce site a été anonymisé : toutes les informations personnelles et coordonnées affichées sont fictives. Ce site réel a été modifié pour servir d'exemple lors de mes épreuves. Les contenus, noms, adresses et contacts sont donc inventés à des fins pédagogiques.</span>
+  </div>
+  <header>
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <img src="logoexemple.webp" alt="Logo ClimExemple" width="48" height="48" />
+        <div>
+          <strong>ClimExemple</strong>
+          <div class="brand-tagline">Climatisation Région Fictive</div>
+        </div>
+      </a>
+      <div class="header-actions">
+        <button class="nav-toggle" aria-label="Ouvrir la navigation" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="galerie.html">Réalisations</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="zone.html">Zone</a></li>
+            <li><a href="qui.html">L’équipe</a></li>
+            <li><a href="contact.html" class="btn btn-primary active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="scroll-progress"><span></span></div>
+  </header>
+
+  <canvas id="stellar-canvas" aria-hidden="true"></canvas>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <h1>Contactez ClimExemple pour un devis gratuit</h1>
+      <p>Installation, entretien ou dépannage : nous intervenons sous 24 à 48 h avec une prise en charge rapide des urgences selon disponibilité.</p>
+    </section>
+
+    <section class="contact mt-section">
+      <article class="contact-card">
+        <h3>Coordonnées directes</h3>
+        <ul>
+          <li><strong>Téléphone :</strong> <a href="tel:+33987654321">09 87 65 43 21</a> / <a href="tel:+33912345678">09 12 34 56 78</a></li>
+            <li><strong>Email :</strong> <!-- email supprimé pour anonymisation --></li>
+            <li><strong>Adresse atelier :</strong> <!-- adresse supprimée pour anonymisation --></li>
+            <li><strong>Horaires :</strong> <!-- horaires supprimés pour anonymisation --></li>
+            <li><strong>Délais :</strong> <!-- délais supprimés pour anonymisation --></li>
+            <li><strong>Urgences :</strong> <!-- urgences supprimées pour anonymisation --></li>
+            <li><strong>Paiement :</strong> <!-- paiement supprimé pour anonymisation --></li>
+            <li><strong>Garanties :</strong> <!-- garanties supprimées pour anonymisation --></li>
+        </ul>
+      </article>
+      <article class="contact-card contact-form-card">
+        <h3>Demander un devis gratuit</h3>
+        <form action="https://formsubmit.co/contact@climexemple.fr" method="POST" class="contact-form">
+          <!-- Anti-spam -->
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_subject" value="Nouveau devis depuis aeroclim.fr" />
+          <input type="hidden" name="_next" value="https://aeroclim.fr/contact.html?sent=1" />
+          <input type="text" name="_honey" style="display:none" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nom & prénom *</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Jean Dupont" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Téléphone *</label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="09 00 00 00 00" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="jean@exemple.fr" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service">Type de demande *</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Choisir…</option>
+                <option value="Installation">Installation</option>
+                <option value="Entretien">Entretien / contrat</option>
+                <option value="Dépannage">Dépannage / urgence</option>
+                <option value="Remplacement">Remplacement</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="city">Ville *</label>
+              <input type="text" id="city" name="city" required placeholder="Villefictive, Exemplar, DémoCity…" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Décrivez votre besoin *</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Type de local, surface, marque existante, urgence…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit">Envoyer ma demande</button>
+          <p class="form-note">Réponse sous 24-48h · Devis 100% gratuit · Aucun engagement</p>
+        </form>
+      </article>
+    </section>
+
+    <div class="section-heading mt-section">
+      <span>Localisation</span>
+      <h3>Nous trouver</h3>
+    </div>
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.5!2d7.0000!3d43.0000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2s123%20Avenue%20des%20Fleurs%2C%2099000%20Villefictive!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr"
+        width="100%" height="400"
+        style="border:0;border-radius:var(--radius-lg);"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Localisation ClimExemple – 123 avenue des Fleurs, Villefictive">
+      </iframe>
+    </div>
+
+    <section class="cta-strip">
+      <div>
+        <h3>Intervention rapide et disponibilité étendue</h3>
+        <p>ClimExemple accompagne particuliers et professionnels dans tout le 99 avec un suivi clair et un travail soigné.</p>
+      </div>
+      <!-- bouton appeler supprimé pour anonymisation -->
+    </section>
+
+    <div class="partners-marquee" aria-label="Conciergerie Aeroclim">
+      <div class="partners-track">
+        <span>Téléphone</span>
+        <span>Email</span>
+        <span>Devis sous 48h</span>
+        <span>Disponibilité étendue</span>
+        <span>Suivi personnalisé</span>
+        <span>Réponse rapide</span>
+        <span>Téléphone</span>
+        <span>Email</span>
+        <span>Devis sous 48h</span>
+        <span>Disponibilité étendue</span>
+        <span>Suivi personnalisé</span>
+        <span>Réponse rapide</span>
+      </div>
+    </div>
+  </main>
+  <button class="back-to-top" aria-label="Retour en haut" type="button">↑</button>
+  <footer>
+    <div class="inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <img src="logoaeroclim.webp" alt="Logo Aeroclim" width="48" height="48" loading="lazy" />
+            <div>
+              <strong>ClimExemple</strong>
+              <div class="footer-since">Depuis 1990</div>
+            </div>
+          </div>
+          <p>Climatisation & chauffage réversible premium sur toute la Riviera.</p>
+          <div class="footer-tags">
+            <span>Depuis 1990</span>
+            <span>Assurance décennale</span>
+            <span>36 ans</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Contact direct</h4>
+          <ul>
+            <li><a href="tel:+33987654321">09 87 65 43 21</a></li>
+            <li><a href="tel:+33912345678">09 12 34 56 78</a></li>
+            <li><a href="mailto:contact@climexemple.fr">contact@climexemple.fr</a></li>
+            <li>123 avenue des Fleurs · Villefictive</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="galerie.html">Réalisations</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="zone.html">Zone</a></li>
+            <li><a href="qui.html">L’équipe</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services premium</h4>
+          <ul>
+            <li>Diagnostic & devis gratuit</li>
+            <li>Installation toutes marques</li>
+            <li>Contrat d'entretien</li>
+            <li>Dépannage 24-48h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <div class="footer-links">
+          <a href="mentions.html">Mentions légales</a>
+          <a href="confi.html">Confidentialité</a>
+        </div>
+      </div>
+      <p class="foot-note">© 2026 Entreprise Fictive – Climatisation & chauffage réversible premium fictif.</p>
+    </div>
+  </footer>
+</body>
+</html>
