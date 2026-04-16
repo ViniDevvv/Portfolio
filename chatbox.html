@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Détails d'un projet IA : assistant et intégration BookStack.">
+    <meta property="og:title" content="Projet IA - Jeudy Vincent">
+    <meta property="og:description" content="Assistant IA et intégration BookStack.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/fond1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Portfolio - Assistant IA</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="js/scroll-effects.js" defer></script>
+</head>
+<body id="top">
+    <div id="preloader" aria-live="polite" aria-busy="true">
+        <div class="preloader-card" role="status">
+            <span class="preloader-ring" aria-hidden="true"></span>
+            <div>
+                <p class="preloader-title">Chargement du portfolio</p>
+                <p class="preloader-sub">Préparation de l’expérience…</p>
+            </div>
+        </div>
+    </div>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+            <script src="js/heure.js"></script>
+            <div class="header-inner">
+                <a class="brand" href="index.html">
+                    <span class="brand-mark" aria-hidden="true">JV</span>
+                    <div>
+                        <p class="brand-title">Jeudy Vincent</p>
+                        <p class="brand-sub">Portfolio • BTS SIO</p>
+                    </div>
+                </a>
+                <nav aria-label="Navigation principale">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a class="active" href="Stage1.html" aria-current="page">Stages BTS SIO</a></li>
+                        <li><a href="projet1.html">Projets BTS SIO</a></li>
+                        <li><a href="projetperso.html">Projet Personnel</a></li>
+                        <li><a href="veille.html">Veille Informatique</a></li>
+                        <li><a href="annexe.html">Annexes</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div id="horloge" role="status" aria-live="polite" aria-atomic="true">Chargement...</div>
+                </div>
+            </div>
+        </header>
+    <main id="contenu" class="chatbox-center" tabindex="-1">
+        <h1>Assistant IA & intégration BookStack</h1>
+         <h2>Tout d’abord, créer un assistant IA avec Delibia :</h2>
+          <p>Définir un rôle.</p>
+         <img src="images/Rôle.png" alt="Rôle de l’assistant IA" loading="lazy" decoding="async">
+         <p>Rédiger des instructions.</p>
+         <img src="images/Instructions.png" alt="Instructions de l’assistant IA" loading="lazy" decoding="async">
+         <p>Fixer des contraintes.</p>
+         <img src="images/Rag.png" alt="Contraintes et RAG" loading="lazy" decoding="async">
+         <p>Ajouter des garde‑fous.</p>
+            <img src="images/Prévention.png" alt="Préventions et garde‑fous" loading="lazy" decoding="async">
+			<br> <br> 
+            <h2>Ensuite, passages clés du script :</h2>
+                <p>Le script améliore aussi le PDF (écriture, bidirectionnalité, qualité des images) pour l’IA.</p>
+            <p>Paramètres : URL de l’API, client ID, client secret.</p>
+            <p>Format d’export, pagination, qualité (DPI, compression) et exclusion de pages sélectionnées.</p>
+        <img src="images/script1.png" alt="Extrait du script d’export" width="70%" loading="lazy" decoding="async">
+        <p>La classe Logger affiche les messages dans l’invite de commande.</p>
+        <img src="images/logger.png" alt="Classe Logger" width="70%" loading="lazy" decoding="async">
+        <p>La fonction getAllBooks récupère les livres de BookStack.</p>
+        <img src="images/getallbooks.png" alt="Fonction getAllBooks" width="70%" loading="lazy" decoding="async">
+        <p>La fonction get gère l’authentification.</p>
+        <img src="images/get.png" alt="Fonction d’authentification" width="70%" loading="lazy" decoding="async">
+        <p>La fonction export télécharge les livres en PDF et lance la fusion.</p>
+        <img src="images/export.png" alt="Fonction d’export PDF" width="70%" loading="lazy" decoding="async">
+        <p>La fonction isExcluded exclut des pages spécifiques (données sensibles, etc.).</p>
+        <img src="images/exclue.png" alt="Exclusion de pages" width="70%" loading="lazy" decoding="async">
+        <p>Fusion des PDF et choix de l’emplacement.</p>
+        <img src="images/merge.png" alt="Fusion des PDF" width="70%" loading="lazy" decoding="async">
+        <p>La fonction cleanup supprime les PDF temporaires après la fusion.</p>
+        <img src="images/cleanup.png" alt="Nettoyage des fichiers temporaires" width="70%" loading="lazy" decoding="async">
+
+        <h2>Déroulement : </h2>
+
+         <p>Lancement de CMD pour exécuter le script PHP.</p>
+
+          <p>Chemin renseigné, exécution du script :</p>
+          <img src="images/cmd1.png" alt="Commande de lancement" width="70%" loading="lazy" decoding="async">
+          <p>Le script s’exécute.</p>
+          <img src="images/cmd2.png" alt="Script en exécution" width="70%" loading="lazy" decoding="async">
+          <p>Démarrage de l’export depuis BookStack.</p>
+          <img src="images/cmd3.png" alt="Export en cours" width="70%" loading="lazy" decoding="async">
+          <p>Les dossiers téléchargés sont stockés dans le répertoire temporaire.</p>
+          <img src="images/dossiertemp2.png" alt="Dossier temporaire (1)" width="70%" loading="lazy" decoding="async">
+          <img src="images/dossiertemp.png" alt="Dossier temporaire (2)" width="70%" loading="lazy" decoding="async">
+          <p>Téléchargement des pages, avec exclusion des contenus sensibles (Hôtel de Police).</p>
+          <img src="images/cmd4.png" alt="Exclusion de pages sensibles" width="70%" loading="lazy" decoding="async">
+          <p>Une fois terminé, le script fusionne les fichiers et supprime le dossier temporaire pour générer un seul PDF.</p>
+          <img src="images/dossierexport.png" alt="PDF final exporté" width="70%" loading="lazy" decoding="async">
+          <p>Les informations de la base de connaissances sont regroupées dans un seul fichier pour l’IA.</p>
+          <p>Connexion du PDF à Delibia et observation des résultats :</p>
+          <img src="images/resultat1.png" alt="Résultat 1" width="70%" loading="lazy" decoding="async">
+          <img src="images/resultat2.png" alt="Résultat 2" width="70%" loading="lazy" decoding="async">
+          <img src="images/resultat3.png" alt="Résultat 3" width="70%" loading="lazy" decoding="async">
+          <img src="images/resultat4.png" alt="Résultat 4" width="70%" loading="lazy" decoding="async">
+ <p>On voit que l’IA comprend le PDF et fournit des réponses pertinentes.</p>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="Stage1.html">Stages</a></li>
+                    <li><a href="projet1.html">Projets</a></li>
+                    <li><a href="projetperso.html">Projet perso</a></li>
+                    <li><a href="veille.html">Veille</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>📧 <a href="mailto:vincentjeudy@icloud.com">vincentjeudy@icloud.com</a></p>
+                <p>📍 06340 La Trinité</p>
+            </div>
+        </div>
+        <a class="back-to-top" href="#top">Retour en haut</a>
+        <p class="footer-copy">© 2026 Portfolio</p>
+    </footer>
+</body>
+</html>
+	
+	

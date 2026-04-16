@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BookStack : présentation et usage dans le cadre du stage BTS SIO.">
+    <meta property="og:title" content="BookStack - Jeudy Vincent">
+    <meta property="og:description" content="Présentation et usage de BookStack en stage.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/fond1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Portfolio - Base de données pour le projet EVE</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="js/scroll-effects.js" defer></script>
+</head>
+<body id="top">
+    <div id="preloader" aria-live="polite" aria-busy="true">
+        <div class="preloader-card" role="status">
+            <span class="preloader-ring" aria-hidden="true"></span>
+            <div>
+                <p class="preloader-title">Chargement du portfolio</p>
+                <p class="preloader-sub">Préparation de l’expérience…</p>
+            </div>
+        </div>
+    </div>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+            <script src="js/heure.js"></script>
+            <div class="header-inner">
+                <a class="brand" href="index.html">
+                    <span class="brand-mark" aria-hidden="true">JV</span>
+                    <div>
+                        <p class="brand-title">Jeudy Vincent</p>
+                        <p class="brand-sub">Portfolio • BTS SIO</p>
+                    </div>
+                </a>
+                <nav aria-label="Navigation principale">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a class="active" href="Stage1.html" aria-current="page">Stages BTS SIO</a></li>
+                        <li><a href="projet1.html">Projets BTS SIO</a></li>
+                        <li><a href="projetperso.html">Projet Personnel</a></li>
+                        <li><a href="veille.html">Veille Informatique</a></li>
+                        <li><a href="annexe.html">Annexes</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div id="horloge" role="status" aria-live="polite" aria-atomic="true">Chargement...</div>
+                </div>
+            </div>
+        </header>
+    <main id="contenu" tabindex="-1">
+        <section>
+            <h1>Base de données – Projet AssoSport</h1>
+            <p>La base de données est le cœur du projet : elle centralise toutes les informations sur les Adhérents, les inscriptions et les  compétitions, de façon sécurisée et structurée.</p>
+            <ul>
+                <li><strong>Table adhérents :</strong> Nom, prénom, date de naissance, adresse, email, téléphone, date d’inscription, statut, historique des adhésions.</li>
+                <li><strong>Table club :</strong> Nom du club, adresse, membres, administrateurs, gestion des droits d’accès (admin, coach, adhérent…).</li>
+                <li><strong>Table compétitions:</strong> Nom, date, lieu, disciplines concernées, participants inscrits, résultats, classements.</li>
+                <li><strong>Table disciplines:</strong> Nom, description, niveau, compétitions associées.</li>
+                <li><strong>Table inscriptions:</strong> Adhérent inscrit, compétition concernée, date d’inscription, statut (validée, en attente, refusée).</li>
+                <li><strong>Table users:</strong> Identifiant, mot de passe (sécurisé), rôle attribué (admin, coach, adhérent…), historique de connexion.</li>
+
+            </ul>
+            <div class="gallery-flex">
+                <img src="images/AssoSport2.png" alt="Tables et relations AssoSport" loading="lazy" decoding="async">
+                <img src="images/AssoSport3.png" alt="Gestion des données AssoSport" loading="lazy" decoding="async">
+                <img src="images/AssoSport4.png" alt="Gestion des données AssoSport" loading="lazy" decoding="async">
+                <img src="images/AssoSport5.png" alt="Gestion des données AssoSport" loading="lazy" decoding="async">
+                <img src="images/AssoSport6.png" alt="Gestion des données AssoSport" loading="lazy" decoding="async">
+                <img src="images/AssoSport7.png" alt="Gestion des données AssoSport" loading="lazy" decoding="async">
+            </div>
+        </section>
+        <section>
+            <h2>Points clés</h2>
+            <ul>
+                <li><strong>Sécurité :</strong> Accès restreint, gestion fine des permissions, protection des données sensibles.</li>
+                <li><strong>Performance :</strong> Requêtes optimisées, affichage rapide, expérience fluide pour l’utilisateur.</li>
+                <li><strong>Évolutivité :</strong> Structure flexible, ajout facile de nouvelles tables ou fonctionnalités selon les besoins.</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="Stage1.html">Stages</a></li>
+                    <li><a href="projet1.html">Projets</a></li>
+                    <li><a href="projetperso.html">Projet perso</a></li>
+                    <li><a href="veille.html">Veille</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>📧 <a href="mailto:vincentjeudy@icloud.com">vincentjeudy@icloud.com</a></p>
+                <p>📍 06340 La Trinité</p>
+            </div>
+            <div>
+                <h3>Documents</h3>
+                <ul class="footer-links">
+                    <li><a href="annexe.html">Annexes</a></li>
+                    <li><a href="pdf/cv.pdf">CV</a></li>
+                    <li><a href="pdf/Rapport1.pdf">Rapport stage 1</a></li>
+                    <li><a href="pdf/Rapport2.pdf">Rapport stage 2</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </div>
+        </div>
+        <a class="back-to-top" href="#top">Retour en haut</a>
+        <p class="footer-copy">© 2026 Portfolio</p>
+    </footer>
+</body>
+</html>
+

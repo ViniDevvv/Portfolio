@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projet dashboard : visualisation et centralisation d'informations.">
+    <meta property="og:title" content="Dashboard - Jeudy Vincent">
+    <meta property="og:description" content="Visualisation et centralisation d'informations.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/fond1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Portfolio - Dashboard</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="js/scroll-effects.js" defer></script>
+</head>
+<body id="top">
+    <div id="preloader" aria-live="polite" aria-busy="true">
+        <div class="preloader-card" role="status">
+            <span class="preloader-ring" aria-hidden="true"></span>
+            <div>
+                <p class="preloader-title">Chargement du portfolio</p>
+                <p class="preloader-sub">Préparation de l’expérience…</p>
+            </div>
+        </div>
+    </div>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+            <script src="js/heure.js"></script>
+            <div class="header-inner">
+                <a class="brand" href="index.html">
+                    <span class="brand-mark" aria-hidden="true">JV</span>
+                    <div>
+                        <p class="brand-title">Jeudy Vincent</p>
+                        <p class="brand-sub">Portfolio • BTS SIO</p>
+                    </div>
+                </a>
+                <nav aria-label="Navigation principale">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a class="active" href="Stage1.html" aria-current="page">Stages BTS SIO</a></li>
+                        <li><a href="projet1.html">Projets BTS SIO</a></li>
+                        <li><a href="projetperso.html">Projet Personnel</a></li>
+                        <li><a href="veille.html">Veille Informatique</a></li>
+                        <li><a href="annexe.html">Annexes</a></li>
+                        <li><a href="app/DashboardVincent.exe">Le dashboard</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div id="horloge" role="status" aria-live="polite" aria-atomic="true">Chargement...</div>
+                </div>
+            </div>
+        </header>
+    <main id="contenu" tabindex="-1">
+        <section>
+            <h1>Dashboard Métropole</h1>
+            <h2>État actuel</h2>
+            <p>Voici le dashboard utilisé par la Métropole avant mon arrivée. Il est composé de trois pages : UC, USER et Imprimante.</p>
+            <img src="images/dashav.png" alt="Dashboard Métropole - Vue 1" loading="lazy" decoding="async">
+            <img src="images/dashav2.png" alt="Dashboard Métropole - Vue 2" loading="lazy" decoding="async">
+        </section>
+        <section>
+            <h2>Ma mission</h2>
+            <p>Proposer une refonte, optimiser l’interface et contribuer à l’ajout de fonctionnalités.</p>
+        </section>
+        <section>
+            <h2>Premier test en Python</h2>
+            <p>Voici le premier test format web et codé en Python que j'ai pu effectuer :</p>
+            <img class="aa" src="images/test1.png" alt="Test Python - Vue 1" loading="lazy" decoding="async">
+        </section>
+        <section>
+            <h2>Optimisation avec AutoIt</h2>
+            <p>Pour des raisons de performance, j’ai choisi AutoIt. J’ai proposé un design plus clair et des améliorations fonctionnelles :</p>
+            <img src="images/test2.png" alt="Dashboard Auto-IT - Vue 1" loading="lazy" decoding="async">
+            <img src="images/test4.png" alt="Dashboard Auto-IT - Vue 2" loading="lazy" decoding="async">
+            <img src="images/test3.png" alt="Dashboard Auto-IT - Vue 3" loading="lazy" decoding="async">
+        </section>
+        <section>
+            <h2>Dashboard optimisé</h2>
+            <p>J’ai proposé un dashboard en une seule page au lieu de trois. Des fonctions ont été ajoutées, dont un système de logs et un bouton « infos » pour les mises à jour récentes.</p>
+            <div class="before-after">
+                <h3>Dashboard — Avant / Après</h3>
+                <p>Comparatif de l’interface : avant optimisation et version finale.</p>
+                <div class="ba-slider" aria-label="Comparaison avant et après">
+                    <div class="ba-image ba-before" role="img" aria-label="Avant"></div>
+                    <div class="ba-image ba-after" role="img" aria-label="Après"></div>
+                    <input class="ba-range" type="range" min="0" max="100" value="55" aria-label="Curseur comparaison">
+                    <span class="ba-handle" aria-hidden="true"></span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Tester la version finale</h2>
+            <p>Vous pouvez télécharger l’exécutable pour voir la version finale du dashboard.</p>
+            <p><a href="app/DashboardVincent.exe" class="btn">Télécharger le dashboard</a></p>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="Stage1.html">Stages</a></li>
+                    <li><a href="projet1.html">Projets</a></li>
+                    <li><a href="projetperso.html">Projet perso</a></li>
+                    <li><a href="veille.html">Veille</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>📧 <a href="mailto:vincentjeudy@icloud.com">vincentjeudy@icloud.com</a></p>
+                <p>📍 06340 La Trinité</p>
+            </div>
+        </div>
+        <a class="back-to-top" href="#top">Retour en haut</a>
+        <p class="footer-copy">© 2026 Portfolio</p>
+    </footer>
+</body>
+</html>
+	
+	
